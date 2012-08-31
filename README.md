@@ -54,7 +54,7 @@ The model can now be automatically linked to using the syntax:
 
     echo $model->createUrl(); // http://example.com/moduleName/controllerName/view?id=123456
     echo $model->createUrl("update"); // http://example.com/moduleName/controllerName/update?id=123456
-    echo $model->createUrl("view", array("greeting" => "hello world)); // http://example.com/moduleName/controllerName/view?id=123456&greeting=hello%20world
+    echo $model->createUrl("view", array("greeting" => "hello world")); // http://example.com/moduleName/controllerName/view?id=123456&greeting=hello%20world
 
     echo $model->createLink(); // <a href="http://example.com/moduleName/controllerName/view?id=123456">Firstname Lastname, 123.456</a>
     echo $model->createLink("Some label"); // <a href="http://example.com/moduleName/controllerName/view?id=123456">Some label</a>
