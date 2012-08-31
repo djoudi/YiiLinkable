@@ -22,7 +22,7 @@ in your main application config:
 # Configuring ALinkable
 To add the linkable behavior to a model, add the following to your model's behaviors()
 method:
-<pre lang="php">
+<pre lang="php"&gt;
     public function behaviors()
     {
         return array(
@@ -48,7 +48,7 @@ method:
 </pre>
 
 The model can now be automatically linked to using the syntax:
-<pre lang="php">
+<pre lang="php"&gt;
     $model->id = 123456;
     $model->name = "Firstname Lastname"
 
@@ -56,9 +56,9 @@ The model can now be automatically linked to using the syntax:
     echo $model->createUrl("update"); // http://example.com/moduleName/controllerName/update?id=123456
     echo $model->createUrl("view", array("greeting" => "hello world")); // http://example.com/moduleName/controllerName/view?id=123456&greeting=hello%20world
 
-    echo $model->createLink(); // <a href="http://example.com/moduleName/controllerName/view?id=123456">Firstname Lastname, 123.456</a>
-    echo $model->createLink("Some label"); // <a href="http://example.com/moduleName/controllerName/view?id=123456">Some label</a>
-    echo $model->createLink("Some label", "update"); // <a href="http://example.com/moduleName/controllerName/update?id=123456">Some label</a>
-    echo $model->createLink("Some label", array("update", "foo" => "bar")); // <a href="http://example.com/moduleName/controllerName/update?id=123456&foo=bar">Some label</a>
-    echo $model->createLink("Some label", "view", array("class" => "test")); // <a class="test" href="http://example.com/moduleName/controllerName/view?id=123456">Some label</a>
+    echo $model->createLink(); // &lt;a href="http://example.com/moduleName/controllerName/view?id=123456"&gt;Firstname Lastname, 123.456&lt;/a&gt;
+    echo $model->createLink("Some label"); // &lt;a href="http://example.com/moduleName/controllerName/view?id=123456"&gt;Some label&lt;/a&gt;
+    echo $model->createLink("Some label", "update"); // &lt;a href="http://example.com/moduleName/controllerName/update?id=123456"&gt;Some label&lt;/a&gt;
+    echo $model->createLink("Some label", array("update", "foo" => "bar")); // &lt;a href="http://example.com/moduleName/controllerName/update?id=123456&foo=bar"&gt;Some label&lt;/a&gt;
+    echo $model->createLink("Some label", "view", array("class" => "test")); // &lt;a class="test" href="http://example.com/moduleName/controllerName/view?id=123456"&gt;Some label&lt;/a&gt;
 </pre>
