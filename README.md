@@ -12,7 +12,7 @@ the appropriates URL and anchor text for that model.
 Extract the files to a folder in your application, e.g. protected/extensions/linkable
 and make sure the contents of this directory are imported by specifying the following
 in your main application config:
-<pre>
+<pre lange="php">
     "import" => array(
         "ext.linkable.*"
     ),
@@ -22,7 +22,7 @@ in your main application config:
 # Configuring ALinkable
 To add the linkable behavior to a model, add the following to your model's behaviors()
 method:
-<pre lang="php"&gt;
+<pre lang="php">
     public function behaviors()
     {
         return array(
@@ -48,7 +48,7 @@ method:
 </pre>
 
 The model can now be automatically linked to using the syntax:
-<pre lang="php"&gt;
+<pre lang="php">
     $model->id = 123456;
     $model->name = "Firstname Lastname"
 
