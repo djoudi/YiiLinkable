@@ -41,22 +41,24 @@ method:
     public function behaviors()
     {
         return array(
-            "class" => "ALinkable",
-            // set the main route to the controller for this model
-            "controllerRoute" => "/moduleName/controllerName"
-            // the default action to use when linking to models of this type
-            "defaultAction" => "view"
-            // the attributes to include in the URL for the model
-            "attributes" => array("id"),
-            // the template to use when creating the anchor text for links.
-            // model attributes can be included in the anchor text by enclosing
-            // the attribute name in brackets. By default attributes will be treated
-            // as text and will be html encoded before being rendered. It is possible
-            // to change this by specifying the format for an attribute preceded by a
-            // colon, e.g. "{thumbnailUrl:image}" would display the attribute
-            // "thumbnailUrl" formatted as an image, whereas "{someHtml:raw}" would
-            // display the attribute "someHtml" without html enconding the value
-            template: "{name}, {id:number}"
+            "ALinkable" => array(
+                "class" => "ALinkable",
+                // set the main route to the controller for this model
+                "controllerRoute" => "/moduleName/controllerName",
+                // the default action to use when linking to models of this type
+                "defaultAction" => "view",
+                // the attributes to include in the URL for the model
+                "attributes" => array("id"),
+                // the template to use when creating the anchor text for links.
+                // model attributes can be included in the anchor text by enclosing
+                // the attribute name in brackets. By default attributes will be treated
+                // as text and will be html encoded before being rendered. It is possible
+                // to change this by specifying the format for an attribute preceded by a
+                // colon, e.g. "{thumbnailUrl:image}" would display the attribute
+                // "thumbnailUrl" formatted as an image, whereas "{someHtml:raw}" would
+                // display the attribute "someHtml" without html enconding the value
+                "template" => "{name}, {id:number}",
+            ),
         );
     }
 
