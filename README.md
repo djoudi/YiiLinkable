@@ -12,7 +12,7 @@ the appropriates URL and anchor text for that model.
 Extract the files to a folder in your application, e.g. protected/extensions/linkable
 and make sure the contents of this directory are imported by specifying the following
 in your main application config:
-<pre lange="php">
+<pre lang="php">
     "import" => array(
         "ext.linkable.*"
     ),
