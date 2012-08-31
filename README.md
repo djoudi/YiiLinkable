@@ -49,7 +49,7 @@ method:
 
 The model can now be automatically linked to using the syntax:
 <pre lang="php">
-    $model->id = 1234567;
+    $model->id = 123456;
     $model->name = "Firstname Lastname"
 
     echo $model->createUrl(); // http://example.com/moduleName/controllerName/view?id=123456
