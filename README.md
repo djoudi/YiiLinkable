@@ -29,7 +29,7 @@ and make sure the contents of this directory are imported by specifying the foll
 in your main application config:
 <pre lang="php">
     "import" => array(
-        "ext.linkable.*"
+        "ext.linkable.*",
     ),
     ...
 </pre>
@@ -67,7 +67,7 @@ method:
 The model can now be automatically linked to using the syntax:
 <pre lang="php">
     $model->id = 123456;
-    $model->name = "Firstname Lastname"
+    $model->name = "Firstname Lastname";
 
     echo $model->createUrl(); // http://example.com/moduleName/controllerName/view?id=123456
     echo $model->createUrl("update"); // http://example.com/moduleName/controllerName/update?id=123456
